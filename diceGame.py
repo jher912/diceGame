@@ -235,7 +235,6 @@ def emptyRoomClear():
         print(wellDesc)
         print(wellOpt)
                 
-        wellOption = int(input('Choose you option: '))
         
             
   
@@ -328,7 +327,11 @@ while playerHealth > 0:
                             riddleAnswer = input('What am I? ')
                         if riddleAnswer.lower() == 'tomorrow':
                             print(riddleSolved)
-                            print('VICTORY!') 
+                            print('VICTORY!')
+                            gameRestart = input('Do you wish to play again?')
+                            print('yes/no')
+                            if gameRestart.lower() == 'yes':
+                                libraryRoomNoScroll()
                         
                         else:
                             guess -= 1
@@ -340,6 +343,10 @@ while playerHealth > 0:
                                 print('You have failed to solve my riddle...')
                                 print('You succummed to the illusion')
                                 playerHealth -= 7
+                                gameRestart = input('Do you wish to play again?')
+                                print('yes/no')
+                                if gameRestart.lower() == 'yes':
+                                    libraryRoomNoScroll()
                     
                     else:
                         print('You rolled a', perceptionCheck)
@@ -353,7 +360,11 @@ while playerHealth > 0:
                             riddleAnswer = input('What am I? ')
                             if riddleAnswer.lower() == 'tomorrow':
                                 print(riddleSolved)
-                                print('VICTORY!') 
+                                print('VICTORY!')
+                                gameRestart = input('Do you wish to play again?')
+                                print('yes/no')
+                                if gameRestart.lower() == 'yes':
+                                    libraryRoomNoScroll()
                         
                         else:
                             guess -= 1
@@ -365,6 +376,10 @@ while playerHealth > 0:
                                 print('You have failed to solve my riddle...')
                                 print('You succummed to the illusion')
                                 playerHealth -= 7
+                                gameRestart = input('Do you wish to play again?')
+                                print('yes/no')
+                                if gameRestart.lower() == 'yes':
+                                    libraryRoomNoScroll()
                     
             
             if wellOption == 2:
@@ -374,7 +389,11 @@ while playerHealth > 0:
                     riddleAnswer = input('What am I? ')
                     if riddleAnswer.lower() == 'tomorrow':
                         print(riddleSolved)
-                        print('VICTORY!') 
+                        print('VICTORY!')
+                        gameRestart = input('Do you wish to play again?')
+                        print('yes/no')
+                        if gameRestart.lower() == 'yes':
+                            libraryRoomNoScroll()
                     
                     else:
                         guess -= 1
@@ -386,6 +405,10 @@ while playerHealth > 0:
                             print('You have failed to solve my riddle...')
                             print('You succummed to the illusion')
                             playerHealth -= 7
+                            gameRestart = input('Do you wish to play again?')
+                            print('yes/no')
+                            if gameRestart.lower() == 'yes':
+                                libraryRoomNoScroll()
                     
             if wellOption == 3:
                 print('As you turn around, you notice that the door you entered from magically disappeared')
@@ -397,7 +420,11 @@ while playerHealth > 0:
                     riddleAnswer = input('What am I? ')
                     if riddleAnswer.lower() == 'tomorrow':
                         print(riddleSolved)
-                        print('VICTORY!') 
+                        print('VICTORY!')
+                        gameRestart = input('Do you wish to play again?')
+                        print('yes/no')
+                        if gameRestart.lower() == 'yes':
+                            libraryRoomNoScroll()
                     
                     else:
                         guess -= 1
@@ -409,6 +436,10 @@ while playerHealth > 0:
                             print('You have failed to solve my riddle...')
                             print('You succummed to the illusion')
                             playerHealth -= 7
+                            gameRestart = input('Do you wish to play again?')
+                            print('yes/no')
+                            if gameRestart.lower() == 'yes':
+                                libraryRoomNoScroll()
             
             
             else:
@@ -421,35 +452,32 @@ while playerHealth > 0:
                 print('You return to the library')
                 libraryRoomNoScroll()
         
-        if option == 3:
-            print('You enter the West Door')
-            print(workshopDesc)
-            print(workshopOpt)
+    if option == 3:
+        print('You enter the West Door')
+        print(workshopDesc)
+        print(workshopOpt)
     
-            workshopOption = int(input('Choose your option: '))
+        workshopOption = int(input('Choose your option: '))
     
-            if workshopOption == 1:
-                print('You found a Dagger and some gold!')
-                daggerCondition == True
-                workshopRoom()
+        if workshopOption == 1:
+            print('You found a Dagger and some gold!')
+            daggerCondition == True
+            workshopRoom()
             
 
         
-            if workshopOption == 2:
-                print('You enter the North Door')
+        if workshopOption == 2:
+            print('You enter the North Door')
         
-                print(wellDesc)
-                print(wellOpt)
-        
-        
-        
-        
+            print(wellDesc)
+            print(wellOpt)
+  
 #well room via workshop        
-                wellOption = int(input('Choose you option: '))
+            wellOption = int(input('Choose you option: '))
         
-                if wellOption == 1:
-                    print(foshiExamine)
-                    perceptionCheck = rollD20()
+            if wellOption == 1:
+                print(foshiExamine)
+                perceptionCheck = rollD20()
                 if perceptionCheck >= 18:
                     print('You rolled a', perceptionCheck,'!')
                     print(illusionBreak)
@@ -461,7 +489,10 @@ while playerHealth > 0:
                     if riddleAnswer.lower() == 'tomorrow':
                         print(riddleSolved)
                         print('VICTORY!') 
-                        break
+                        gameRestart = input('Do you wish to play again?')
+                        print('yes/no')
+                        if gameRestart.lower() == 'yes':
+                            libraryRoomNoScroll()
                     
                     else:
                         guess -= 1
@@ -473,6 +504,10 @@ while playerHealth > 0:
                             print('You have failed to solve my riddle...')
                             print('You succummed to the illusion')
                             playerHealth -= 7
+                            gameRestart = input('Do you wish to play again?')
+                            print('yes/no')
+                            if gameRestart.lower() == 'yes':
+                                libraryRoomNoScroll()
                 
                 else:
                     print('You rolled a', perceptionCheck)
@@ -484,7 +519,10 @@ while playerHealth > 0:
                     if riddleAnswer.lower() == 'tomorrow':
                         print(riddleSolved)
                         print('VICTORY!') 
-                        break
+                        gameRestart = input('Do you wish to play again?')
+                        print('yes/no')
+                        if gameRestart.lower() == 'yes':
+                            libraryRoomNoScroll()
                     
                     else:
                         guess -= 1
@@ -496,16 +534,23 @@ while playerHealth > 0:
                             print('You have failed to solve my riddle...')
                             print('You succummed to the illusion')
                             playerHealth -= 7
+                            gameRestart = input('Do you wish to play again?')
+                            print('yes/no')
+                            if gameRestart.lower() == 'yes':
+                                libraryRoomNoScroll()
                     
-                    if wellOption == 2:
-                        while guess > 0:
-                            print(foshiText)
-                            print(riddle)
-                            riddleAnswer = input('What am I? ')
-                            if riddleAnswer.lower() == 'tomorrow':
-                                print(riddleSolved)
-                                print('VICTORY!') 
-                                break
+            if wellOption == 2:
+                while guess > 0:
+                    print(foshiText)
+                    print(riddle)
+                    riddleAnswer = input('What am I? ')
+                    if riddleAnswer.lower() == 'tomorrow':
+                        print(riddleSolved)
+                        print('VICTORY!') 
+                        gameRestart = input('Do you wish to play again?')
+                        print('yes/no')
+                        if gameRestart.lower() == 'yes':
+                            libraryRoomNoScroll()
             
                     else:
                         guess -= 1
@@ -517,21 +562,29 @@ while playerHealth > 0:
                             print('You have failed to solve my riddle...')
                             print('You succummed to the illusion')
                             playerHealth -= 7
+                            gameRestart = input('Do you wish to play again?')
+                            print('yes/no')
+                            if gameRestart.lower() == 'yes':
+                                libraryRoomNoScroll()
                     
                 
-                if wellOption == 3:
-                    combatCheck = rollD20()
-                    print('You rolled a', combatCheck, 'You miss!')
+            if wellOption == 3:
+                combatCheck = rollD20()
+                print('You rolled a', combatCheck, 'You miss!')
+                print(foshiText)
+                print(riddle)
+                while guess > 0:
                     print(foshiText)
                     print(riddle)
-                    while guess > 0:
-                        print(foshiText)
-                        print(riddle)
-                        riddleAnswer = input('What am I? ')
-                        if riddleAnswer.lower() == 'tomorrow':
-                            print(riddleSolved)
-                            print('VICTORY!')
-                            break
+                    riddleAnswer = input('What am I? ')
+                    if riddleAnswer.lower() == 'tomorrow':
+                        print(riddleSolved)
+                        print('VICTORY!')
+                        gameRestart = input('Do you wish to play again?')
+                        print('yes/no')
+                        if gameRestart.lower() == 'yes':
+                            libraryRoomNoScroll()
+                        
                 
                     else:
                         guess -= 1
@@ -543,6 +596,10 @@ while playerHealth > 0:
                             print('You have failed to solve my riddle...')
                             print('You succummed to the illusion')
                             playerHealth -= 7
+                            gameRestart = input('Do you wish to play again?')
+                            print('yes/no')
+                            if gameRestart.lower() == 'yes':
+                                libraryRoomNoScroll()
             
             
             if wellOption == 4:
@@ -586,7 +643,6 @@ while playerHealth > 0:
     
         cellOption = int(input('Choose your option: '))
     
-    while monsterHealth > 0:
         if cellOption == 1:
             roll = random.randint(1, 20)
             if roll == 1:
