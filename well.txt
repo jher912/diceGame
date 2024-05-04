@@ -1,0 +1,3 @@
+As you enter the room, the door behind you locks itself.
+
+Infront of you lies a well, a figure emerges from within...

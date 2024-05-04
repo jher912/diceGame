@@ -1,0 +1,5 @@
+Options: 
+1. Search the room
+2. Enter North Door
+3. Enter West Door
+4. Investigate Trapdoor

@@ -1,0 +1,3 @@
+2. Enter North Door
+3. Enter West Door
+4. Investigate Trapdoor

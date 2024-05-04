@@ -1,0 +1,5 @@
+Options:
+1. Examine the figure
+2. Speak to the figure
+3. Attack the figure
+4. Return

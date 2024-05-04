@@ -1,0 +1,3 @@
+Options: 
+1. Enter West Door.
+2. Return.
